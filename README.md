@@ -1,2 +1,2 @@
 # pgp-mailer
-A NodeJS client to send and receive PGP emails using O365, Gmail, etc
+A Python client to send and receive PGP emails using O365, Gmail, etc
