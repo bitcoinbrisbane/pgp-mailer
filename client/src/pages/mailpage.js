@@ -17,18 +17,19 @@ const defaultArray = [];
 
 const MailPage = () => {
   return (
-    <Layout>
-      <div className="container-fluid py-5">
-        <div className="row">
-          <div className="col">
-            <h1>Mail</h1>
-          </div>
-          <div className="col">
+    <h1>mail</h1>
+    // <Layout>
+    //   <div className="container-fluid py-5">
+    //     <div className="row">
+    //       <div className="col">
+    //         <h1>Mail</h1>
+    //       </div>
+    //       <div className="col">
 
-          </div>
-        </div>
-      </div>
-    </Layout>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </Layout>
   );
 };
 

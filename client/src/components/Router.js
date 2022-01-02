@@ -1,17 +1,20 @@
-import React from "react";
-import { Router as ReactRouter, Route, Switch } from "react-router-dom";
-import MailPage from "../pages/MailPage";
+// import React from "react";
+// import { Router as ReactRouter, Route, Switch } from "react-router-dom";
+// import MailPage from "../pages/MailPage";
 
-import { createBrowserHistory } from "history";
+// import { BrowserRouter as Router } from 'react-router-dom';
 
-export const history = createBrowserHistory();
+// import { createBrowserHistory } from "history";
 
-const Router = () => (
-  <ReactRouter history={history}>
-    <Switch>
-      <Route path="/mail" component={MailPage} />
-    </Switch>
-  </ReactRouter>
-);
+// export const history = createBrowserHistory();
 
-export default Router;
+// const Router = () => (
+//   <ReactRouter history={history}>
+//     <RefreshLoginModal />
+//     <Switch>
+//       <Route path="/login" component={LoginPage} />
+//       </Switch>
+//   </ReactRouter>
+// );
+
+// export default Router;
