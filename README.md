@@ -15,6 +15,12 @@ python3 -m pip install --upgrade google-api-python-client google-auth-httplib2 g
 python3 -m pip install PGPy
 ```
 
+## Run the app
+
+```bash
+python3 gmail.py
+```
+
 ## How to get your creds
 
 https://www.thepythoncode.com/article/use-gmail-api-in-python

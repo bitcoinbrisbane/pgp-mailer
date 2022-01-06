@@ -69,23 +69,28 @@ def main():
         # Assume the sender has retrieved the public key and saved it to a file.
         # reload the public key
         url = 'https://api.protonmail.ch/pks/lookup?op=get&search=lucascullen@protonmail.ch'
+
+        url = 'https://keys.openpgp.org/vks/v1/by-email/saskianeale@saskialaw.com'
+
         headers = {'user-agent': 'pgp/0.0.1'}
         response = requests.get(url, headers=headers)
         print(response.content)
+
+
 
         pubkey, _ = PGPKey.from_blob(response.content)
         # pubkey, _ = PGPKey.from_file("lucascullen.asc")
         print(pubkey)
 
         # As usual, construct a PGPMessage from a string:
-        _message = PGPMessage.new("42 is quite a pleasant number")
+        _message = PGPMessage.new("testing from my app")
 
         # Transform it into a new PGPMessage that contains an encrypted form of the
         # unencrypted message
         encrypted_message = pubkey.encrypt(_message)
         print(encrypted_message)
 
-        message = create_message("lucascullen1979@gmail.com", "lucascullen@protonmail.com", "test", str(encrypted_message))
+        message = create_message("lucascullen1979@gmail.com", "saskianeale@saskialaw.com", "test", str(encrypted_message))
         send_message(service, "me", message)
 
         if not labels:
